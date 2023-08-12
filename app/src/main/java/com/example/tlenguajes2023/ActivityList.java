@@ -104,4 +104,9 @@ public class ActivityList extends AppCompatActivity
             list.setAdapter(apd);
         }
     }
+
+    public void ActivityIngresarNuevaPersona(View view){
+        Intent nuevo = new Intent(this, ActivityIngresar.class);
+        startActivityForResult(nuevo, REQUEST_EDIT_PERSON);
+    }
 }

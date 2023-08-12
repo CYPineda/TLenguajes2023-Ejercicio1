@@ -10,11 +10,20 @@
     <ListView
         android:id="@+id/Lista"
         android:layout_width="match_parent"
-        android:layout_height="547dp" />
+        android:layout_height="510dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/edit_delete" />
 
     <Button
         android:id="@+id/btnAgregarPersona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar" />
-</LinearLayout>
+        android:onClick="ActivityIngresarNuevaPersona"
+        android:text="Nueva Persona" />
+
+    </LinearLayout>

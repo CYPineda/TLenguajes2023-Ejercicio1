@@ -57,15 +57,16 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:gravity="bottom"
-        android:onClick="guardarCambios" />
+        android:layout_gravity="center"
+        android:onClick="guardarCambios"
+        android:text="Actualizar" />
 
     <Button
         android:id="@+id/btnEliminar"
-        android:layout_width="wrap_content"
+        android:layout_width="129dp"
         android:layout_height="wrap_content"
-        android:text="Eliminar"
-        android:onClick="eliminarRegistro" />
+        android:layout_gravity="center"
+        android:onClick="eliminarRegistro"
+        android:text="Eliminar" />
 
 </LinearLayout>

@@ -78,10 +78,13 @@ public class ActivityIngresar extends AppCompatActivity {
         if(resultado > 0)
         {
             Toast.makeText(getApplicationContext(), "Registro ingresado con exito",Toast.LENGTH_LONG).show();
+            setResult(RESULT_OK);
+            finish();
         }
         else
         {
             Toast.makeText(getApplicationContext(), "Registro no se ingreso",Toast.LENGTH_LONG).show();
+
         }
 
         db.close();

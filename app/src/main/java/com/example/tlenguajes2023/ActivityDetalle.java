@@ -56,20 +56,19 @@ public class ActivityDetalle extends AppCompatActivity {
 
         if (conexion.actualizarPersona(selectedPerson)) {
             Toast.makeText(this, "Cambios guardados", Toast.LENGTH_SHORT).show();
-            setResult(RESULT_OK); // Envía un resultado OK a ActivityList
+            setResult(RESULT_OK);
             finish();
         } else {
             Toast.makeText(this, "Error al guardar los cambios", Toast.LENGTH_SHORT).show();
         }
     }
     public void eliminarRegistro(View view) {
-        // Implementa la lógica para eliminar el registro aquí
         SQLiteConnection conexion = new SQLiteConnection(getApplicationContext(), ConfigDB.namebd, null, 1);
 
         if (conexion.eliminarPersona(selectedPerson.getId())) {
             Toast.makeText(this, "Registro eliminado", Toast.LENGTH_SHORT).show();
             setResult(RESULT_OK);
-            finish(); // Finaliza esta actividad después de eliminar el registro
+            finish();
         } else {
             Toast.makeText(this, "Error al eliminar el registro", Toast.LENGTH_SHORT).show();
         }
