@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityDetalle">
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/edtApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:hint="Apellidos" />
+
+    <EditText
+        android:id="@+id/edtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:hint="Edad"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:hint="Correo" />
+
+    <EditText
+        android:id="@+id/edtDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:hint="Direccion" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:gravity="bottom"
+        android:onClick="guardarCambios" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:onClick="eliminarRegistro" />
+
+</LinearLayout>
